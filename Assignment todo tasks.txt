@@ -1,0 +1,39 @@
+Create a single-page responsive website using HTML5, CSS3, and Vanilla JavaScript (no frameworks for this part).
+
+The design should include:
+
+·         A responsive navigation bar.
+
+·         A hero section with a background image and text overlay.
+
+·         A grid of four cards (with image, title, and description), that rearrange themselves based on screen size (using media queries).
+
+·         Make sure the page is mobile-first, optimized for different screen sizes.
+
+·         Key Technologies to Use:
+
+
+create branch github:
+git checkout -b feature/modal
+Add and commit changes:
+git add .
+git commit -m "Add modal feature"
+
+Push the feature branch to GitHub
+git push origin feature/modal
+
+Create a new branch for the "filter" feature
+git checkout main
+git checkout -b feature/filter
+
+git add .
+git commit -m "Add filter functionality"
+git push origin feature/filter
+
+
+Merging into the main branch (after feature completion)
+git checkout main
+git pull origin main
+git merge feature/modal
+git push origin main
+
