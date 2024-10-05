@@ -45,7 +45,7 @@ section{
     /* column-gap: 3rem; */
 }
 
-
+/* for mobile */
 
 @media screen and (max-width:768px) {
     .navItems{
@@ -156,7 +156,11 @@ section{
     font-size: 1.2rem;
     font-weight: 500;
 }
-
+.product{
+    text-align: center;
+    padding: 1rem 0;
+    font-size: 1.5rem;
+}
 .Products{
     
     display: grid;
@@ -255,6 +259,8 @@ section{
     border-radius: 50%;
 }
 
+
+/* for medium screen */
 @media screen and (min-width: 768px) {
     .navToggle{
         display: none;
@@ -262,6 +268,9 @@ section{
     .Header{
         display: flex;
         justify-content: space-between;
+        /* position: fixed; */
+        /* margin: 0 auto; */
+        /* width: 100%; */
     }
     .navItems{
         flex-direction: row;
@@ -308,7 +317,11 @@ section{
     .hero_image{
         grid-row: 2;
     }
-
+    .product{
+        /* text-align: center; */
+        padding: 1rem 0;
+        font-size: 2rem;
+    }
     .Products{
         grid-template-columns: 1fr 1fr;
         gap: 2rem;
@@ -330,4 +343,104 @@ section{
         
     }
     
+}
+
+
+/* for big screen */
+
+@media screen and (min-width: 1100px){
+    body{
+        width: 90%;
+        /* top: 5rem; */
+        margin: .5rem auto;
+    }
+    .Header{
+        background-color: rgb(182, 199, 250);
+        border-radius: 1rem;
+        padding: 2rem;
+    }
+    .navItems{
+        justify-content: space-around;
+        align-items: center;
+        column-gap: 2.5rem;
+        /* font-size: 1.5rem; */
+    }
+    .navItems a{
+        font-weight:600;
+
+    }
+
+
+    .HeroContant{
+       display: flex;
+       height: 80vh;
+       align-items: center;
+       padding: 1rem;
+       gap: .1rem;
+       justify-content: space-around;
+       /* justify-self: start; */
+        
+    }
+    .right_contant{
+        /* display: fl; */
+        flex-direction: column;
+        /* font-size: 1.8rem; */
+    }
+    .Hero_title{
+        width: 100%;
+        font-size: 3rem;
+    }
+    .Hero_Description{
+        font-size: 2rem;
+    }
+    .right_contant_shopping .btn{
+        padding: 1.5rem 3rem;
+        font-size: 1.5rem;
+    }
+    .right_contant_shopping {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* font-size: 1.5rem; */
+        /* text-align: flex-start; */
+    }
+
+    .sales_item{
+        font-size: 1.2rem;
+    }
+    .left_contanct{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 3rem;
+    }
+    .left_contanct h2{
+        font-size: 2.5rem;
+    }
+
+    .left_contanct a{
+        padding: 1.5rem 3rem;
+        border-radius: 1rem;
+    }
+    .hero_image img{
+        padding: 1rem;
+        /* width: 80%; */
+    }
+
+    .product{
+        padding: 2rem 0;
+        font-size: 3rem;
+    }
+    .Products{
+        /* display: grid; */
+        /* grid-template-areas: ; */
+        grid-template-columns: repeat(4, 1fr);
+        /* grid-column: span; */
+    }
+
+    .footer{
+        width: 100%;
+        /* position: absolute; */
+    }
 }
